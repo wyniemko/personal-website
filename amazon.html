@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Brady Wyniemko</title>
+    <meta name="description" content="Hello, I'm Brady Wyniemko">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alata&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Berkeley%20Mono.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kumbh+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/SF%20Pro%20Display.css">
+    <link rel="stylesheet" href="assets/css/SF%20Pro%20Rounded.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Minimal-icons.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Hero-Clean-Reverse-images.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Modern-Contact-Form.css">
+    <link rel="stylesheet" href="assets/css/Rowfcards.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/untitled-1.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</head>
+
+<body style="background: rgb(0,0,0);">
+    <section class="highlight-clean" style="padding-top: 100px;background: #060606;">
+        <div class="container">
+            <div class="intro">
+                <p style="font-family: 'SF Pro Display';font-size: 20px;color: rgb(255,255,255);margin-bottom: 22px;margin-top: 16px;"><a href="http://wyniemko.tech" style="color: rgb(0,0,0);"><span style="color: rgb(0, 0, 0);">&nbsp;</span><i class="fas fa-arrow-left" style="font-size: 40px;color: rgb(255,255,255);"></i></a><br><br><strong><span style="color: var(--tw-prose-headings);">Amazon Conveyor Belt Monitoring and Tracking System</span></strong></p>
+                <p style="margin-bottom: 44px;color: rgb(142,142,147);font-size: 15px;font-family: 'SF Pro Display';">Amazon has reached out to my team to identify a solution for downtime in the production schedule that has accumulated due to belt failure. Amazon has yet to scale to passive, predictive monitoring systems for conveyance, sorting, and packaging machines. Core operations (headquarters) has developed these systems at a high level for customer ordering predictions. And this project will enable technicians and managers to predict failure months before they occur, at the same rate as operations.&nbsp;<br><br>These centers rely on complex conveyance systems to transport and sort packages, with conveyor belts being a significant component. With +75 types of belts, the team is looking for a standardized product that can be bolted along the conveyor belt to relay critical performance data on belt performance and life. However, due to the high volume of parcels and constant operation of the centers, these conveyance systems can become overworked and prone to failure.<br><br>After speaking with representatives from Amazon and conducting initial research, I decided to develop a proof of concept for a camera-based monitoring system that could identify surface defects in real-time and prevent unscheduled downtime.<br><br>To solve this problem, I turned to computer vision and machine learning techniques. I began by programming the machine learning model in OpenCV, a popular computer vision library, and TensorFlow, a popular machine learning library.&nbsp;I used these tools to analyze and interpret the data collected by the camera system, looking for patterns and anomalies that could indicate potential belt failure.<br><br><strong><span style="color: rgb(255, 255, 255);">System Overview</span></strong><br>The system uses OpenCV, a popular computer vision library, and TensorFlow, a popular machine learning library, to analyze and interpret data collected by the camera system. The code, written in JavaScript, controls the camera system to function in real-time and alerts operators if any defects are detected. The system also incorporates cloud-based PLC systems to track the entire length of the conveyor belt and optimize production schedules.<br><br><img src="assets/img/amazon_test1.png" width="326" height="340" style="display: grid;"><br><br><strong><span style="color: rgb(255, 255, 255);">Conveyor Belt Tracking</span></strong><br>In addition to defect detection, the system also includes a conveyor belt tracking component. This component uses OpenCV and Numpy to process a video of the conveyor belt and perform various operations, including recording, frame extraction, masking, and contour detection. The user is prompted to enter the speed and length of the conveyor belt, which is then used to calculate the cycle length. The video recording is started using OpenCV's cv2.VideoCapture function and the video is saved in MP4 format. The code then extracts the necessary frames, masks them, and performs background subtraction to detect the vertical length of the conveyor belt.<br><br>Next, I wrote the code to control the camera system using JavaScript, allowing it to function in real-time and alert operators if any defects were detected. This code also incorporated cloud-based PLC systems to track the entire length of the belt and optimize production schedules.<br><br><img src="assets/img/amazon_test2.png" width="410" height="429" style="display: grid;"><br><strong><span style="color: rgb(255, 255, 255);">Results</span></strong><br>The system is successfully built and ready to&nbsp;launch in several Amazon fulfillment centers and has proven to be a valuable asset in preventing unscheduled downtime and improving the centers' efficiency. The conveyor belt tracking component provides additional data on the performance and life of the conveyor belts, allowing technicians and managers to predict potential failures in advance.<br><br><strong><span style="color: rgb(255, 255, 255);">Code and Demo</span></strong><br>Defect detection code:&nbsp;<a href="https://github.com/wyniemko/defect-detection">https://github.com/wyniemko/defect-detection</a>. Demo:&nbsp;<a href="https://defect-detection.bwyniemko.repl.co/">https://defect-detection.bwyniemko.repl.co</a>.<br><br>Tracking code: <a href="https://github.com/wyniemko/conveyor-belt-tracking">https://github.com/wyniemko/conveyor-belt-tracking</a><br><br><strong><span style="color: rgb(255, 255, 255);">Conclusion</span></strong><br>Developing the Amazon conveyor belt monitoring and tracking system was a rewarding and challenging project. By utilizing computer vision and machine learning techniques, we were able to create a solution that will have a significant impact on Amazon's operations.<br><br></p>
+                <div class="table-responsive" style="font-size: 15px;">
+                    <table class="table">
+                        <thead style="font-size: 15px;">
+                            <tr style="font-size: 15px;"></tr>
+                        </thead>
+                        <tbody style="color: rgb(255,255,255);font-size: 15px;">
+                            <tr style="color: rgb(255,255,255);font-size: 15px;"></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="buttons"></div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/Lightbox-Gallery.js"></script>
+    <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>
